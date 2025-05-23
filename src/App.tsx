@@ -7,7 +7,7 @@ export default function App() {
     <div style={{ width: "100%", height: "100dvh" }}>
       <StudioEditor
         options={{
-          licenseKey: "095a8e56c51d47b0bcc10d7518b8da60d85a833368f5475d99141a2d3ca284b3",
+          licenseKey: '683662e5f0cf4c53b7b0b2c7c2dc7f670b1292f9a8e044e08b77805aafd0b6cc',
           project: {
             type: "web",
             // TODO: replace with a unique id for your projects. e.g. an uuid
