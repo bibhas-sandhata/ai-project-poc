@@ -25,6 +25,24 @@ export default function App() {
             autosaveChanges: 100,
             autosaveIntervalMs: 10000,
           },
+          plugin: (editor:any) => {
+            editor.Blocks.add('custom-text-block', {
+              label: 'Custom Text',
+              content: '<div class="custom-text">Hello from custom block!</div>',
+              category: 'Custom',
+            });
+      
+            editor.DomComponents.addType('custom-text', {
+              model: {
+                defaults: {
+                  tagName: 'div',
+                  classes: ['custom-text'],
+                  content: 'Editable Custom Text',
+                  attributes: { 'data-custom': 'yes' },
+                },
+              },
+            });
+          }
         }}
       />
     </div>
